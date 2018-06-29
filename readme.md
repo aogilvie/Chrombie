@@ -52,9 +52,9 @@ There are several projects that open a URL in a headless browser, but this proje
 
 - Run the docker container
 
-`docker run --name webtest -v $(pwd)/webtest.js:/app/src/index.js my-webtest`
+`docker run --rm --name webtest -v $(pwd)/webtest.js:/app/src/index.js my-webtest`
 
 - Taking screenshots:
 
 # NOTE: in your webtest.js you must output screenshots to the correct output dir: "/app/screenshots/<your-filename>"
-`docker run --name webtest -v $(pwd)/screenshots:/app/screenshots -v $(pwd)/webtest.js:/app/src/index.js my-webtest`
+`docker run --rm --name webtest -v $(pwd)/screenshots:/app/screenshots -v $(pwd)/webtest.js:/app/src/index.js my-webtest`
