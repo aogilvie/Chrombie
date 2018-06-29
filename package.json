@@ -1,0 +1,14 @@
+{
+  "name": "headless-horseman",
+  "version": "1.0.0",
+  "description": "This is a app to run Puppeteer scripts/tests.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "*"
+  }
+}
