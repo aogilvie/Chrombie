@@ -54,12 +54,13 @@ There are several projects that open a URL in a headless browser, but this proje
 
 `docker run --rm --name webtest -v $(pwd)/webtest.js:/app/src/index.js my-webtest`
 
-- Taking screenshots
+### Taking screenshots
 
-# NOTE: in your webtest.js you must output screenshots to the correct output dir: "/app/screenshots/<your-filename>"
+Note: in your webtest.js you must output screenshots to the correct output dir: "/app/screenshots/<your-filename>"
+
 `docker run --rm --name webtest -v $(pwd)/screenshots:/app/screenshots -v $(pwd)/webtest.js:/app/src/index.js my-webtest`
 
-- Faking a video stream
+### Faking a video stream
 
 Use these args below to pass to Chrome. Note:
 
