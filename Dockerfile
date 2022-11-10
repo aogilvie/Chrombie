@@ -24,6 +24,14 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
+# Install internation fonts
+RUN apt-get update && apt-get install -y \
+  fonts-arphic-ukai \
+  fonts-arphic-uming \
+  fonts-ipafont-mincho \
+  fonts-ipafont-gothic \
+  fonts-unfonts-core
+
 # Add Chrome as a user
 RUN groupadd --gid 1000 --system chrome && useradd --system --create-home --uid 1000 --gid chrome -G audio,video chrome
 
